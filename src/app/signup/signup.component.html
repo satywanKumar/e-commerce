@@ -1,0 +1,26 @@
+
+<form [formGroup] = "user" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="username" class="form-label">Username</label>
+    <input type="text" class="form-control" id="username" placeholder="username" name="username" formControlName="username">
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="password" name="price" formControlName="password">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="email" name="email" formControlName="email">
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">phone</label>
+    <input class="form-control" id="phone" rows="3" name="phone" formControlName="phone">
+  </div>
+
+  <div class="mb-3">
+    <label for="userType" class="form-label">use type</label>
+    <input class="form-control" id="userType" rows="3" name="userType" formControlName="userType">
+  </div>
+
+  <button class="btn btn-primary" (click)="signup()">submit</button>
+</form>

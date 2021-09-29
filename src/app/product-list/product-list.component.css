@@ -1,0 +1,30 @@
+.main-wrapper
+{
+  /* background-color: rgb(240, 235, 235); */
+  padding: 20px;
+  box-shadow: 5px 5px 15px;
+  margin-bottom: 20px;
+}
+.product-img
+{
+  height:200px;
+  width:100%;
+}
+.ctgry
+{
+  background-color: #eee;
+  padding: 10px;
+  min-height: 80vh;
+}
+
+.product-card
+{
+  margin-bottom: 25px;
+}
+
+.product-card:hover
+{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.7s;
+}

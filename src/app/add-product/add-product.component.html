@@ -1,0 +1,25 @@
+
+<form [formGroup] = "product" enctype="multipart/form-data">
+  <p>{{id}}</p>
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input type="text" class="form-control" id="title" placeholder="Enter Title of Product" name="title" formControlName="title">
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Price</label>
+    <input type="text" class="form-control" id="price" placeholder="in rupees" name="price" formControlName="price">
+  </div>
+  <div class="mb-3">
+    <label for="ctgry" class="form-label">Category</label>
+    <input type="text" class="form-control" id="ctgry" name="ctgry" formControlName="ctgry">
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea class="form-control" id="description" rows="3" name="ctgry" formControlName="description"></textarea>
+  </div>
+  <input style="display:none" type="file" #fileSelector (change)="onImageSelected($event)">
+  <button class="btn btn-primary" type="button" (click)="fileSelector.click()">upload image</button>
+  <img class="review-image" [src]="imageUrl">
+  <br><br>
+  <button class="btn btn-primary" (click)="save()">submit</button>
+</form>

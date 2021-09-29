@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <img class="product-image" [src]="product.imagePath" alt="cup">
+    </div>
+
+    <div class="col-sm-6">
+      <h1>{{product.title | uppercase}}</h1>
+      <hr>
+      <h3>Price : {{product.price}}</h3>
+
+      <p>Description : {{product.description}}</p>
+      <p>Category : {{product.ctgry}}</p>
+
+      <button class="btn btn-danger" (click)="delete()">Delete</button>
+      <button style="margin-left: 20px;" class="btn btn-primary" (click)="update()">Update</button>
+    </div>
+  </div>
+</div>
